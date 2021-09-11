@@ -1,0 +1,275 @@
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.imagen {
+    width: 100%;
+    position: relative;
+}
+
+.imagen__fondo {
+    position: absolute;
+    width: 100%;
+    z-index: -5;;
+}
+
+.wrapper {
+    padding: 2em;
+    max-width: 75rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__contet-img {
+    margin-top: 4em;
+}
+
+.header__title {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 2rem;
+}
+
+.header__text {
+    color: var(--Grayish-Blue);
+    margin-bottom: 2em;
+}
+
+.boton {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 5em;
+    border: none;
+    color: #fff;
+    margin-bottom: 1em;
+    cursor: pointer;
+    max-width: 20rem;
+    height: 3.7rem;
+}
+.boton--ios {
+    background: var(--Strong-Cyan);
+}
+
+.boton--mac {
+    background: var(--Light-Blue);
+    margin-bottom: 5em;
+}
+
+.snippest {
+    text-align: center;
+}
+
+.snippest__title {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.snippest__text {
+    color: var(--Grayish-Blue);
+    margin-bottom: 3em;
+}
+
+.snippest__contet-img {
+    margin: 0;
+}
+
+.snippest__img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.snippest__services-cont {
+    margin-bottom: 3em;
+}
+
+.snippest__subtitle {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.snippest__paragraphs {
+    color: var(--Grayish-Blue);
+}
+
+.snippest__services-cont--botton {
+    margin-bottom: 8em;
+}
+
+.access {
+    text-align: center;
+}
+
+.access__title {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.access__text {
+    color: var(--Grayish-Blue);
+    margin-bottom: 2em;
+}
+
+.access-cont__img {
+    width: 100%;
+    margin: 0;
+}
+
+.access__img {
+    width: 100%;
+}
+
+.workflow {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.workflow__title {
+    font-size: 1.6rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.workflow__text {
+    color: var(--Grayish-Blue);
+    margin-bottom: 5em;
+}
+
+.services {
+    margin-bottom: 5em;
+    display: grid;
+    gap: 1.9rem;
+}
+
+.services__title {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.services__text {
+    color: var(--Grayish-Blue);
+}
+
+.company {
+    width: 100%;
+    margin-bottom: 7em;
+    display: grid;
+    gap: 3rem;
+}
+
+.clipboard {
+    text-align: center;
+}
+
+.clipboard__title {
+    font-size: 1.6rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.clipboard__text {
+    color: var(--Grayish-Blue);
+}
+
+.footer {
+    background: #eee;
+    text-align: center;
+}
+
+.footer__cont-img {
+    margin: 0;
+    width: 70px;
+    height: 70px;
+    margin: 2em auto;
+}
+
+.footer__logo {
+    width: 100%;
+}
+
+.footer__text {
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .header__text {
+        
+        margin: 2em auto;
+    }
+
+    .header__flex {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .header__flex-cont {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .snippest__text {
+        max-width: 37.5rem;
+        margin:  0 auto 3em auto;
+    }
+
+    .snippest__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .snippest__contet-img {
+        width: 45%;
+    }
+
+    .snippest__img {
+        position: relative;
+        right: 15%;
+    }
+
+    .snippest__services {
+        width: 45%;
+        text-align: left;
+    }
+
+    .access__text {
+        max-width: 37.5rem;
+        margin: 2em auto;
+    }
+
+    .access-cont__img {
+        max-width: 37.5rem;
+        margin: 2em auto;
+    }
+
+    .services {
+        max-width: 1000px;
+        margin:  0 auto 5em auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .company {
+        width: 80%;
+        margin:  0 auto 5em auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer {
+        margin-top: 3em;
+    }
+
+    .footer1 {
+        display: grid;
+        grid-template-columns: repeat(4, 150px) 1fr;
+        align-items: center;
+    }
+
+    .wrapper {
+        overflow: hidden;
+    }
+}
